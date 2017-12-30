@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+        <meta charset="utf-8">
+            <title>Hi i'm Andy M</title>
+        <meta name="description" content="Andy's Page">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	    <!-- Latest compiled and minified JavaScript -->
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    </head>
+    
+    <style>    
+	</style>
+    
+    <script>
+    
+        $(document).ready(function(){
+        /* affix the navbar after scroll below header */
+        $(".navbar").affix({offset: {top: $(".jumboHead").outerHeight(true)} });
+        $(".nav-pills").affix({offset: {top: $(".jumboHead").outerHeight(true)} });
+        });
+        
+    </script>
+    
+    <!-- Cover page, slide down, first page....etc...
+            #00FF00 - Green 
+            #FFFF00 - Yellow
+            #FF7F00 - Orange
+            #FF0000 - Red
+            #0000FF - Blue
+            #9400D3 - Violet
+            #4B0082 - Indigo
+    -->
+    
+    <body data-spy="scroll" data-target="#my-navbar">
+
+        <div class="jumbotron jumboHead">        
+            <div class="container-fluid">
+                <div>
+                    <div class="row">
+                        <div class="span4"></div>
+                        <div class="span4"><img src="assets/collie.png" class="img-circle photo"></div>
+                        <div class="span4"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h3>Hi i'm Andy</h3>
+                    <p>Software Engineer, Tech lead & Web developer</p>
+                </div>
+                <div class="row">
+                    <div class="span4">
+                    </div>
+                    <div class="span4">
+                        <div class="mouse scroller">
+                          <div class="wheel">
+                          </div>
+                        </div>
+                        <span class="unu scroller chevron"></span> 
+                        <span class="doi scroller chevron"></span> 
+                        <span class="trei scroller chevron"></span>
+                    </div>
+                    <div class="span4">
+                    </div> 
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <nav class="navbar navbar-inverse" id="myScrollspy">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div><!-- Navbar Header-->  
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav nav-pills nav-stacked">
+                        <li><a href="#">Basic Topnav</a></li>
+                        <li><a href="#aboutMe">About</a></li>
+                        <li><a href="#">Page 2</a></li>
+                        <li><a href="#">Page 3</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <br/>
+            <!-- about -->
+
+            <div class="container">
+                <div class="jumbotron" id="aboutMe">
+                    <h4><strong>About</strong></h4>
+                    <p>Dublin based Software Engineer working in the travel industry for 3 years, specialising in solutions for online travel agencies(OTAs). 
+                        BSC in Computer Science from Dublin Institute of Technology</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="jumbotron" >
+                    <h4><strong>Experience</strong></h4>
+                    <p>Put exp stuff here</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="jumbotron" >
+                    <h4><strong>Skills</strong></h4>
+                    <p>skills......</p>
+                </div>
+            </div>
+            
+        </div>
+        
+        <footer class="footer">
+            <div class="container">
+                <span class="text-muted">This is a footer</span>
+            </div>
+        </footer>
+    </body>
+</html>
